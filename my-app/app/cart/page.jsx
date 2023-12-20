@@ -11,10 +11,10 @@ const Cart = () => {
           <h2 className="text-2xl pb-[12px] border-b-[1px] border-green">
             The Royal Curry
           </h2>
-          <Image
+          <img
             src="/cartXL.png"
-            width={48}
-            height={48}
+            width={60}
+            height={60}
             aria-label="cart"
             className="mx-auto mt-[24px]"
           />
