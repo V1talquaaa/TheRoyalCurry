@@ -12,7 +12,7 @@ const Cart = () => {
             The Royal Curry
           </h2>
           <img
-            src="/cartXL.png"
+            src="/CartXL.png"
             width={60}
             height={60}
             aria-label="cart"

@@ -36,7 +36,7 @@ return (
       <div className="mt-[80px]lg:hidden">
         <SwiperMobMenu />
       </div>
-      <Link href="/cart"><img src="/cart.png" width={32} height={32} alt="cart" className="absolute top-0 right-3 md:right-[100px]"/></Link>
+      <Link href="/cart"><img src="/Cart.png" width={32} height={32} alt="cart" className="absolute top-0 right-3 md:right-[100px]"/></Link>
     </div>
 </div>
   );
