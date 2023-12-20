@@ -1,8 +1,10 @@
-import Image from "next/image";
 import React from "react";
-import { Counter } from "./Counter";
+import Link from "next/link";
+import { Card } from "@/app/subComponents/Card";
+import { SwiperMobLanding } from "@/app/subComponents/SwiperMobLanding";
 
 export const Menu = () => {
+
     const dishes = [
         {
             id: '1',
@@ -84,20 +86,17 @@ export const Menu = () => {
     ]
 
   return (
-    <section className="bg-textLight py-[80px]">
+    <section className="py-[60px] bg-textLight lg:py-[80px]">
       <div className="container">
-        <h2 className="font-lobster text-4xl">Menu</h2>
-        <p className="mt-[24px] ">Bestsellers</p>
-        <ul className=" mt-[36px] grid grid-cols-4 gap-x-[24px] text-green">
-            {dishes.map(dish => <li key={dish.id} className="p-[19px] border border-green text-center">
-                <Image src={dish.image} width={264} height={264} className="mx-auto" alt="dish"/>
-                <h3>{dish.name}</h3>
-                <p>{dish.description}</p>
-                <span>{`$${dish.price}`}</span>
-                <Counter />
-            </li>)}
+        <h2 className="text-2xl text-center font-lobster lg:text-4xl lg:text-left">Menu</h2>
+        <p className="text-center mt-[24px] lg:text-left ">Bestsellers</p>
+        <ul className="hidden mt-[36px] lg:grid grid-cols-4 gap-x-[24px] text-green">
+            {dishes.map(dish => <Card key={dish.id} image={dish.image} title={dish.name} description={dish.description} price={dish.price} />)}
         </ul>
-        <button className="mt-[32px] px-[104px] py-[20px] border border-green rounded-[12px] mx-auto flex">View More</button>
+        <div className="lg:hidden">
+        <SwiperMobLanding data={dishes}/>
+        </div>
+        <Link href="/menu"><button className="mt-[32px] px-[104px] py-[20px] border border-green rounded-[12px] mx-auto flex hover:scale-105 transition-all">View More</button></Link>
       </div>
     </section>
   );

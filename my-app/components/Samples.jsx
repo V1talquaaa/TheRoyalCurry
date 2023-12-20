@@ -3,7 +3,7 @@ import React from 'react'
 
 export const Samples = () => {
   return (
-    <section className='mt-[100px] bg-gradient-to-b from-transparent from-30% to-orange-600 to-30%' >
+    <section className='hidden lg:block mt-[100px] bg-gradient-to-b from-transparent from-30% to-orange-400 to-30%' >
         <div className='container'>
             <ul className='text-textLight flex justify-around text-center'>
                 <li className='w-[310px] '>

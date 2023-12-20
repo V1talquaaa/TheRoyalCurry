@@ -8,6 +8,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --swiper-pagination-color: #DB5A2F;
+  --swiper-pagination-bottom: 0px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,5 +27,9 @@ background-color: #253029;
 .swiper-button-next::after,
 .swiper-button-prev::after {
   color: #DB5A2F;
+}
+
+img {
+  margin: 0;
 }
 

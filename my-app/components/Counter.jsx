@@ -17,12 +17,12 @@ export const Counter = () => {
     }
   return (
     <div className="flex justify-between items-center mt-[12px]">
-      <div className="flex">
-        <button onClick={decrement}><RemoveCircleRoundedIcon color="warning" /></button>
+      <div className="flex grow ">
+        <button onClick={decrement}><RemoveCircleRoundedIcon color="warning"/></button>
         <p className="mx-[15px]">{value}</p>
-        <button onClick={increment} ><AddCircleRoundedIcon color="warning"/></button>
+        <button onClick={increment} ><AddCircleRoundedIcon color="warning" /></button>
       </div>
-      <button className="py-[9px] px-[23px] border rounded-[12px] border-orange-600">Add to Order</button>
+      <button className="py-[9px] px-[23px] border rounded-[12px] bg-orange-400 text-white hover:scale-105 transition-all">Add to Order</button>
     </div>
   );
 };

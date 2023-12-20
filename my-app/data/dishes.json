@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "name": "Chicken Dhansak",
+        "description": "An Indian classic chicken dish, cooked in a medley of lentils and spices, served with Basmati rice",
+        "price": 14.5,
+        "image": "/menuImg5.png"
+    },
+    {
+        "id": 2,
+        "name": "Chicken Curry",
+        "description": "Boneless chicken cooked in authentic curry sauce with onions, ginger, garlic, tomatoes and spices",
+        "price": 16,
+        "image": "/menuImg1.png"
+    },
+    {
+        "id": 3,
+        "name": "Chicken Saag",
+        "description": "A popular North Indian dish with chicken simmered with spices in a nutritious sauce ",
+        "price": 18,
+        "image": "/menuImg2.png"
+    },
+    {
+        "id": 4,
+        "name": "Chicken Dhanya Wala",
+        "description": "Chicken cooked in cilantro flavored mild curry sauce, served with Basmati rice ",
+        "price": 13,
+        "image": "/menuImg3.png"
+    },
+    {
+        "id": 5,
+        "name": "Chicken Shahi Korma",
+        "description": "Tender pieces of chicken simmered in mild spices, yogurt, nuts and aromatic cream sauce",
+        "price": 15,
+        "image": "/menuImg4.png"
+    },
+    {
+        "id": "6",
+        "name": "Spicy Chicken",
+        "description": "Boneless chicken cooked in spicy tomato onion sauce, served with Basmati rice",
+        "price": 20,
+        "image": "/menuImg5.png"
+    },
+    {
+        "id": "7",
+        "name": "Chicken Dhansak",
+        "description": "An Indian classic chicken dish, cooked in a medley of lentils and spices, served with Basmati rice",
+        "price": 16.5,
+        "image": "/menuImg1.png"
+    },
+    {
+        "id": "8",
+        "name": "Chicken Curry",
+        "description": "Boneless chicken cooked in authentic curry sauce with onions, ginger, garlic, tomatoes and spices",
+        "price": 15,
+        "image": "/menuImg2.png"
+    },
+    {
+        "id": "9",
+        "name": "Chicken Saag",
+        "description": "A popular North Indian dish with chicken simmered with spices in a nutritious sauce ",
+        "price": 11,
+        "image": "/menuImg3.png"
+    },
+    {
+        "id": "10",
+        "name": "Chicken Dhanya Wala",
+        "description": "Chicken cooked in cilantro flavored mild curry sauce, served with Basmati rice ",
+        "price": 18,
+        "image": "/menuImg4.png"
+    },
+    {
+        "id": "11",
+        "name": "Chicken Shahi Korma",
+        "description": "Tender pieces of chicken simmered in mild spices, yogurt, nuts and aromatic cream sauce",
+        "price": 17,
+        "image": "/menuImg5.png"
+    },
+    {
+        "id": "12",
+        "name": "Spicy Chicken",
+        "description": "Boneless chicken cooked in spicy tomato onion sauce, served with Basmati rice",
+        "price": 21,
+        "image": "/menuImg5.png"
+    }
+]
