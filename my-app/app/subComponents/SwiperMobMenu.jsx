@@ -15,7 +15,7 @@ export const SwiperMobMenu = () => {
 <Swiper slidesPerView={1} spaceBetween={24} pagination navigation={{clickable: true}} modules={[Navigation, Pagination]}>
     {dishes.map((dish) => {
       return (
-        <SwiperSlide>
+        <SwiperSlide key={dish.id}>
           <Card key={dish.id} image={dish.image? `${dish.image}` : '/menuImg1.png'} title={dish.name} description={dish.description} price={dish.price}/>
         </SwiperSlide>
       )

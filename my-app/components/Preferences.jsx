@@ -47,9 +47,13 @@ export const Preferences = () => {
           Why do customers choose us?
         </h2>
         <ul className="mt-[24px] grid grid-cols-2 gap-x-[16px] gap-y-[24px] lg:gap-x-[30px] lg:gap-y-[60px] lg:grid-cols-3 lg:mt-[80px]">
-        {data.map(artic => <li key={artic.id} className="relative flex flex-col justify-center items-center lg:p-[12px] lg:border lg:min-w-[404px]">
+        {data.map(artic => <li key={artic.id} className="relative flex flex-col justify-center items-center lg:items-start lg:justify-start lg:p-[12px] lg:border lg:min-w-[404px]">
             <img src={artic.image} alt="" className="mb-[12px] lg:hidden"/>
-            <h3 className="text-xs text-center lg:text-left lg:text-xl text-textLight"><span className="hidden lg:block text-4xl text-orange-400">{`${artic.id}. `}</span>{artic.title}</h3>
+            <div className="lg:flex lg:text-left lg:items-center">
+            <span className="hidden lg:block mr-3 text-4xl text-orange-400">{`${artic.id}. `}</span>
+            <h3 className="text-xs text-center lg:text-left lg:text-xl text-textLight">{artic.title}</h3>
+            </div>
+            
             <p className="hidden lg:block mt-[23px] text-base text-textLight">{artic.description}</p>
         </li>)}
         </ul>
