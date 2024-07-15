@@ -1,13 +1,11 @@
 'use client'
 import React from "react";
-import { useState } from "react";
 import AddCircleRoundedIcon from '@mui/icons-material/AddCircleRounded';
 import RemoveCircleRoundedIcon from '@mui/icons-material/RemoveCircleRounded';
 
 
 export const Counter = ({quantity, setQuantity}) => {
 
-    // const [value, setValue] = useState(0);
 
     const increment = () => {
       setQuantity(quantity + 1)

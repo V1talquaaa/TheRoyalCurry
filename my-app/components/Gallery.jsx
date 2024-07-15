@@ -1,7 +1,6 @@
 'use client'
 import React, { useState } from "react";
 import Image from "next/image";
-import Modal from "@/app/subComponents/Modal";
 import Link from "next/link";
 
 

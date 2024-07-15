@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Grid, Navigation, Pagination } from 'swiper/modules';
 import dishes from '../../data/dishes.json'
 import {Card} from './Card';
-import { nanoid } from 'nanoid';
 
 import 'swiper/css';
 import 'swiper/css/grid';
