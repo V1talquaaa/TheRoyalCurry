@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { removeCard } from "@/redux/cart/cardSlice";
+import { nanoid } from "nanoid";
 
 const Cart = () => {
   const cart = useSelector((state) => state.card);
@@ -41,7 +42,7 @@ const Cart = () => {
           {cart.length > 0 &&
             cart.map((cartItem) => {
               return (
-                <div className="p-5 my-[20px] mx-[100px] grid grid-cols-4 border border-green rounded-lg relative">
+                <div key={nanoid()} className="p-5 my-[20px] mx-[100px] grid grid-cols-4 border border-green rounded-lg relative">
                   <button
                     onClick={() => onRemoveBtnClick(cartItem.id)}
                     className="w-[20px] h-[20px] absolute right-2 top-2 bg-red-500 rounded-full"
