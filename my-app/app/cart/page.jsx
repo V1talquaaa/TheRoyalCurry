@@ -61,7 +61,7 @@ const Cart = () => {
                 </div>
               );
             })}
-          <h3 className="my-[50px] text-2xl text-green">Total order: {totalPrice} USD</h3>
+          <h3 className="my-[50px] text-2xl text-green">Total order: {totalPrice} $</h3>
           <button
             type="submit"
             className="px-[75px] py-[15px] bg-orange-400 text-textLight rounded-[12px]"
