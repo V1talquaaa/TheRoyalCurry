@@ -1,11 +1,11 @@
-// {
-//   "extends": ["next/babel","next/core-web-vitals"]
-// }
 {
-  "extends": "next",
-  "rules": {
-    // ваші правила ESLint
-  }
+  "extends": ["next/babel","next/core-web-vitals"]
 }
+// {
+//   "extends": "next",
+//   "rules": {
+//     // ваші правила ESLint
+    
+//   }
+// }
 
-// "changed settings"
