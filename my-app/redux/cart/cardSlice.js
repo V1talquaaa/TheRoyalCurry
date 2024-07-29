@@ -15,7 +15,6 @@ export const cardSlice = createSlice({
         removeCard: (state, {payload}) => {
             const index = state.findIndex(cart => cart.id === payload);
             if (index !== -1) {
-                console.log(index)
                 state.splice(index, 1);
             }
         }

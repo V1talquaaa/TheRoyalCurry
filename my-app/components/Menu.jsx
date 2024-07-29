@@ -96,7 +96,7 @@ export const Menu = () => {
         <div className="lg:hidden">
         <SwiperMobLanding data={dishes}/>
         </div>
-        <Link href="/menu"><button className="mt-[32px] px-[104px] py-[20px] border border-green rounded-[12px] mx-auto flex hover:scale-105 transition-all">View More</button></Link>
+        <Link href="/menu"><button className="mt-[62px] px-[104px] py-[20px] border border-green rounded-[12px] mx-auto flex hover:scale-105 transition-all">View More</button></Link>
       </div>
     </section>
   );

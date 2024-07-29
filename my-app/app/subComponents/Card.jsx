@@ -14,12 +14,15 @@ export const Card = ({id, image, title, description, price}) => {
   const dispatch = useDispatch();
 
   const onAddButtonClick = (dish, quantity, price) => {
-    dispatch(addCard({dish, quantity, price, id}));
-    console.log(cart)
+    if(quantity > 0) {
+      dispatch(addCard({dish, quantity, price, id}));
+    }
+
   }
 
   return (
-    <li key={id} className="p-[19px] border bg-textLight border-green text-center flex flex-col h-[100%] justify-between">
+
+<div key={id} className="p-[19px] bg-textLight border-green text-center flex flex-col h-[460px] justify-between">
                 <img src={image} className="mx-auto" alt="dish"/>
                 <h3 className='text-xl mt-[12px]'>{title}</h3>
                 <p className='my-[8px]'>{description}</p>
@@ -28,7 +31,6 @@ export const Card = ({id, image, title, description, price}) => {
                 <Counter quantity={quantity} setQuantity={setQuantity} />
                 <button onClick={() => onAddButtonClick(title, quantity, price, id=nanoid())} className="py-[9px] px-[23px] border rounded-[12px] bg-orange-400 text-white hover:scale-105 transition-all">Add to Order</button>
                 </div>
-
-    </li>
+    </div>
   )
 }

@@ -4,6 +4,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { removeCard } from "@/redux/cart/cardSlice";
 import { nanoid } from "nanoid";
+import { Counter } from "@/components/Counter";
 
 const Cart = () => {
   const cart = useSelector((state) => state.card);

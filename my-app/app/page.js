@@ -13,7 +13,6 @@ export default function Home() {
       <Samples />
       <About />
       <Preferences />
-      <Menu />
       <Feedback />
       <Gallery />
     </>

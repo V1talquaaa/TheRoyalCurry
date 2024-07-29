@@ -12,8 +12,9 @@ export const Counter = ({quantity, setQuantity}) => {
     }
 
     const decrement = () => {
-        if(value <= 0) return
-        setQuantity(quantity - 1)
+          if(quantity > 0) {
+            setQuantity(quantity - 1)
+          }
     }
   return (
     <div className="flex justify-between items-center mt-[12px]">
