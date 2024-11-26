@@ -1,19 +1,28 @@
 "use client";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { removeCard } from "@/redux/cart/cardSlice";
 import { nanoid } from "nanoid";
-import { Counter } from "@/components/Counter";
+import { useRouter } from "next/navigation";
+
 
 const Cart = () => {
   const cart = useSelector((state) => state.card);
 
   const dispatch = useDispatch();
 
+  const router = useRouter();
+
   const onRemoveBtnClick = (id) => {
     dispatch(removeCard(id));
   };
+
+  const onSubmitBtnClick = () => {
+    if(cart.length > 0) {
+      router.push('/thanks')
+    }
+  }
 
   const totalPrice = cart.reduce((total, cartItem) => {
     return total + cartItem.quantity * cartItem.price;
@@ -65,6 +74,7 @@ const Cart = () => {
           <h3 className="my-[50px] text-2xl text-green">Total order: {totalPrice} $</h3>
           <button
             type="submit"
+            onClick={onSubmitBtnClick}
             className="px-[75px] py-[15px] bg-orange-400 text-textLight rounded-[12px]"
           >
             Submit

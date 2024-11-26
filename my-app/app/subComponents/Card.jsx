@@ -13,8 +13,8 @@ export const Card = ({id, image, title, description, price}) => {
 
   const dispatch = useDispatch();
 
-  const onAddButtonClick = (dish, quantity, price) => {
-    if(quantity > 0) {
+  const onAddButtonClick = (dish, quantity, price, id) => {
+    if(quantity > 0 ) {
       dispatch(addCard({dish, quantity, price, id}));
     }
 
